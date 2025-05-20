@@ -1,0 +1,132 @@
+/* Conteneur principal */
+.containerI { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    margin: 20px auto;
+    margin-top: 70px;
+    color: black;
+    max-width: 90%;
+}
+
+/* 🔥 Centrage des h2, h3, h4 */
+.containerI h2, 
+.containerI h3, 
+.containerI h4 {
+    text-align: center;
+}
+
+
+/* Colonnes */
+.columnI { 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Images */
+.image-info {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    display: block;
+}
+
+/* Texte centré */
+.info-text {
+    text-align: justify;
+}
+
+/* Titres en gras */
+.bold-title {
+    font-weight: bold;
+}
+
+/* Icône dans le lien */
+.icon-info {
+    width: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Modals */
+.modal-window {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+    top: 80px; /* 🔥 Décale les modals sous la navbar */
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.modal-window:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-window > div {
+    position: relative;
+    width: 360px;
+    padding: 2em;
+    background: #cdd3ba;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    color: black;
+}
+
+/* Médias queries pour l’adaptabilité */
+@media (max-width: 768px) { 
+    .containerI {
+        margin-top: 100px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+        /* Assurer le centrage des titres en mode tablette */
+    .containerI h2, 
+    .containerI h3, 
+    .containerI h4 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) { 
+    .containerI {
+        margin-top: 50px;
+        grid-template-columns: 1fr;
+    }
+
+    .image-info {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* Garder le centrage des titres en mode mobile */
+    .containerI h2, 
+    .containerI h3, 
+    .containerI h4 {
+        text-align: center;
+    }
+}

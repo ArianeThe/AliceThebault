@@ -1,0 +1,114 @@
+/* Container de la navbar */
+.navbar-container {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 170px;;
+    width: 100%;
+    background-color: #a4b197;
+    padding: 5px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0; /* Assure qu'elle commence bien à gauche */
+    right: 0; /* Assure qu'elle s’étend jusqu’à droite */
+}
+
+/* Contenu de la navbar */
+.navbar-content {
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Menu burger (mobile) */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Liens du menu */
+.nav-links {
+    display: flex;
+    justify-content: center; /* Centre les liens horizontalement */
+    align-items: center; /* Centre les liens verticalement */
+    gap: 2rem;
+    width: 100%;
+}
+
+.nav-links a {
+    color: black; /* Uniformisé avec le reste du site */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.2rem;
+    padding: 10px;
+
+}
+
+.nav-links a:hover {
+    color: #333;
+}
+
+.nav-links a.active {
+    color: #633c3c;
+    font-weight: bold;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: relative;
+        top: 1rem;
+        right: 1rem;
+        margin: 10px auto;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        gap: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        width: 100%;
+        padding: 1rem;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links a:last-child {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Évite le scrolling quand le menu est ouvert */
+body.menu-open {
+    overflow: hidden;
+}
+
+.main-content {
+    padding-top: 120px; /* Ajusté pour éviter que le contenu soit caché sous la navbar */
+    z-index: 1001;
+}

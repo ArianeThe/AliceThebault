@@ -1,0 +1,56 @@
+/* Header général */
+
+.header-container {
+    width: 100%;
+    text-align: center;
+    font-family: 'Abril Fatface', serif;
+    font-weight: bold;
+    padding: 10px;
+    z-index: 1100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: transparent; /* Supprime l'arrière-plan */
+
+}
+
+.header-title {
+    font-size: 4rem; /* Rend "Alice THEBAULT" plus grand */
+    color: black;
+}
+
+.sub-title {
+    font-size: 2rem;
+    color: black;
+}
+
+/* Positionnement du logo Doctolib */
+.doctolib-logo {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    margin-right: 150px;
+}
+
+/* Responsive Header */
+@media (max-width: 768px) {
+    .header-container {
+        font-size: 1rem;
+        padding: 15px;
+        margin-top: 50px;
+    }
+
+    .header-title {
+    font-size: 2rem; /* Rend "Alice THEBAULT" plus grand */
+    color: black;
+}
+.sub-title {
+    font-size: 1rem;
+    color: black;
+}
+    .doctolib-logo {
+        width: 15px;
+    }
+}

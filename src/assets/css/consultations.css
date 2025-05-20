@@ -1,0 +1,121 @@
+ /*formating consultation*/
+ .containerC { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; margin: 20px; 
+    margin-top: 100px;
+    color: black;
+} 
+
+.columnC { 
+    padding: 20px; 
+    box-sizing: border-box; /* Pour inclure le padding et la bordure dans la largeur totale */ }
+
+     
+ .ellipse {
+      transform: scale(0.90) skew(0deg);
+      font-size: x-large;
+      border-radius: 250px;
+      text-align: center;
+      height: 500px;
+  }
+
+    .btn {
+    color: black;
+  }
+
+
+
+ /* Médias queries pour les petits écrans */ 
+@media (max-width: 768px) 
+    { .containerC {margin-top: 50px; grid-template-columns: repeat(2, 1fr); /* Passe à deux colonnes */ } }
+
+@media (max-width: 480px) {
+    .containerC {
+        margin-top: 50px;
+        display: flex; 
+        flex-direction: column; /* Empêche le chevauchement */
+        align-items: center; 
+    }
+
+    .columnC {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .ellipse {
+        max-width: 90%; 
+        font-size: large;
+    }
+
+        .modal-window > div {
+        top: 100px;
+        width: 90%; 
+        padding: 1.5em;
+    }
+
+    .modal-close {
+        top: 5px; 
+        right: 10px;
+        font-size: 20px; 
+    }
+}
+
+
+
+
+ 
+ 
+ 
+ 
+ /*formatting modal*/
+ 
+.modal-window {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.modal-window:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-window > div {
+     position: relative;
+    width: 360px;
+    padding: 2em;
+    background: #cdd3ba;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+ 
+ .modal-close:hover {
+     color: black;
+ }
+ .soutienPsy{
+    text-align: justify;
+ }
+ 

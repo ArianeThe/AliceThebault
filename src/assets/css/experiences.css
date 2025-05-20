@@ -1,0 +1,72 @@
+/* Conteneur général */
+.containerE { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    margin: 50px 20px;
+    color: black;
+    text-align: justify;
+}
+
+/* Colonnes */
+.columnE { 
+    margin-top: 50px;
+    padding: 20px; 
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+/* Titres */
+.columnE h2 {
+    font-size: 1.2rem; /* Uniformisation de la taille des titres */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Paragraphes et listes */
+.columnE p, .columnE ul {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Liste améliorée */
+.columnE ul {
+    padding-left: 20px;
+}
+
+.columnE li {
+    margin-bottom: 10px;
+}
+
+/* Texte central */
+.columnE.center-text {
+    margin-top: 200px;
+    font-size: 3rem; /* Augmente la taille du texte */
+    font-weight: bold; 
+    text-align: justify; 
+}
+
+
+/* Responsive pour tablettes */
+@media (max-width: 768px) {
+    .containerE {
+        margin-top: 50px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive pour mobiles */
+@media (max-width: 480px) {
+    .containerE {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .columnE h2 {
+        font-size: 1.6rem;
+    }
+
+    .columnE p, .columnE ul {
+        font-size: 1.1rem;
+    }
+}

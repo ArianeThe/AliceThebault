@@ -1,0 +1,49 @@
+/* Arrière-plan global */
+body {
+    background: url("/img/ArrièrePlanSitecClair.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Footer fixe */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    background-color: #a4b197;
+    text-align: center;
+    padding: 10px;
+    opacity: 0.8;
+}
+
+/* Conteneur global des pages */
+.page-container {
+    background: #d5dad1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section scrollable entre navbar et footer */
+.content-scrollable {
+    position: fixed;
+    top: 170px; /* Ajuste selon la hauteur de la navbar */
+    bottom: 80px; /* Ajuste selon la hauteur du footer */
+    left: 0;
+    right: 0;
+    overflow: auto; /* Permet de scroller uniquement dans cette zone */
+    padding: 20px;
+}
+
+
+/* Responsive global */
+@media (max-width: 768px) {
+    .navbar-container { padding: 5px; }
+    .header-container { font-size: 0.5rem; }
+    .footer { padding: 5px; }
+}

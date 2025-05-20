@@ -1,0 +1,100 @@
+/* Conteneur général */
+.containerR { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    margin: 20px auto;
+    margin-top: 70px;
+    color: black;
+    max-width: 90%;
+}
+
+/* Conteneur du titre */
+.title-container {
+    text-align: center;
+    padding-top: 100px; /* 🔥 Ajustement pour éviter un trop grand espace */
+    margin-bottom: 20px;
+}
+
+/* Style du titre */
+.titleR {
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Colonnes */
+.columnR { 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Images */
+.imageR {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    display: block;
+}
+
+/* Bloc infos horaires */
+.infoR {
+    width: 500px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+/* Image Doctolib */
+.doctolib-link {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.doctolib-img {
+    width: 200px;
+}
+
+/* Carte Google Maps */
+.mapR {
+    width: 400px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    display: block;
+}
+
+/* Médias queries pour l’adaptabilité */
+@media (max-width: 768px) { 
+    .containerR {
+        margin-top: 100px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .imageR, .mapR {
+        width: 90%;
+    }
+
+    .infoR {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) { 
+    .containerR {
+        margin-top: 50px;
+        grid-template-columns: 1fr;
+        max-width: 95%;
+    }
+
+    .imageR, .mapR {
+        width: 95%;
+    }
+
+    .infoR {
+        font-size: 18px;
+        width: 100%;
+    }
+}
