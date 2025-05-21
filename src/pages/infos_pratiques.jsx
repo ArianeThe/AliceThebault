@@ -39,11 +39,11 @@ const InfosPratiques = () => {
 
             <h4>Dispositif "Mon Soutien Psy"</h4>
             <p>
-              Bien que conventionnée par la CPAM, je ne prend plus de nouveaux patients dans le cadre du dispositif « mon soutien psy ».
+              Bien que conventionnée par la CPAM, je ne prends plus de nouveaux patients dans le cadre du dispositif « mon soutien psy ».
 
               Merci de votre compréhension.
 
-              Pour les patients déjà suivis, les créneaux seront disponibles les matinées des lundis, mardis et jeudi pour les adultes uniquement.
+              Pour les patients déjà suivis, les créneaux seront disponibles les matinées des lundis, mardis et jeudis pour les adultes uniquement.
             </p>
             <div className="container">
               <div className="interior">
@@ -65,7 +65,7 @@ const InfosPratiques = () => {
             <div className="soutienPsy">
               <h4>Conventionné par la CPAM, ce dispositif gouvernemental permet un accompagnement psychologique  
                 pour des personnes n’ayant pas la possibilité financière d’y accéder, à hauteur de 12 séances par an, au tarif de 50 euros.</h4>
-              <p>Plus d'informations sur <a href="https://www.info.gouv.fr/" target="_blank" rel="noopener noreferrer">www.info.gouv.fr</a></p>
+              <p>Plus d'informations sur <a href="https://www.info.gouv.fr/actualite/mon-soutien-psy-12-seances-remboursees-par-an" target="_blank" rel="noopener noreferrer">www.info.gouv.fr</a></p>
             </div>
           </div>
         </div>

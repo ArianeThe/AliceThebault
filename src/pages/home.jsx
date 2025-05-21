@@ -11,8 +11,8 @@ const Home = () => {
       <div className="content-scrollable">
         <p className="presentation">
           L'Organisation Mondiale de la Santé (OMS) définit la santé comme 
-          "un état de complet bien-être physique, mental et social, 
-          et ne consiste pas seulement en une absence de maladie ou d'infirmité."
+          "un état de complet bien-être physique, mental et social
+           ne consiste pas seulement en une absence de maladie ou d'infirmité."
           <br /><br />
           La vie étant en perpétuel mouvement, l'individu doit continuellement
           s'adapter afin de veiller le mieux possible à son propre équilibre.

@@ -22,7 +22,8 @@ const Experiences = () => {
           <h2>FORMATION CONTINUE :</h2>
           <p>
             Depuis 2013, membre de la Consultation d’Éthique Clinique du CHU de Nantes,
-            j’assiste fréquemment à diverses formations, notamment autour des questions de :
+            j’assiste fréquemment à diverses formations et participe aux staffs de réflexion éthique concernant des situations médicales.
+            Je me forme régulièrement à différents sujets :
           </p>
           <ul>
             <li>Dépression et prévention du suicide</li>
