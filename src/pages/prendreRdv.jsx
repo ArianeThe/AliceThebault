@@ -21,10 +21,10 @@ const PrendreRdv = () => {
 
           <div className="columnR infoR">
             <h3>Jours et horaires de consultations :</h3>
-            <p>Lundi : 09h45 - 13h45, 15h00 - 19h30</p>
-            <p>Mardi : 09h45 - 13h30, 14h45 - 19h00</p>
-            <p>Mercredi : 09h45 - 12h45, 13h45 - 15h15</p>
-            <p>Jeudi : 09h45 - 13h45, 15h00 - 19h30</p>
+            <p>Lundi : 09h30 - 13h00, 15h00 - 19h00</p>
+            <p>Mardi : 09h30 - 13h30, 15h00 - 19h30</p>
+            <p>Mercredi : 09h00 - 12h30, 13h30 - 16h00</p>
+            <p>Jeudi : 09h30 - 13h30</p>
             <p>Sur rendez-vous</p>
 
             <br />
