@@ -25,8 +25,8 @@ const InfosPratiques = () => {
             <p>1ère séance de 1h30, au tarif de 150€</p>
             <p>Séance de suivi de 40 minutes, au tarif de 75€</p>
 
-            <h4>Consultation adulte dispositif "Mon Soutien Psy"</h4>
-            <p>Séance de 40 minutes, au tarif de 50€</p>
+            {/*<h4>Consultation adulte dispositif "Mon Soutien Psy"</h4>
+            <p>Séance de 40 minutes, au tarif de 50€</p>*/}
 
             <h4 className="bold-text">Le cabinet est accessible aux personnes à mobilité réduite</h4>
             <h4>Règlement et facturation</h4>
