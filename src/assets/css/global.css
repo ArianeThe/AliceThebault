@@ -20,6 +20,23 @@ body {
     opacity: 0.8;
 }
 
+.footer-links {
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+.footer-link {
+    color: #2c3e2a;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #1a2419;
+    text-decoration: underline;
+}
+
 
 
 /* Conteneur global des pages */
@@ -34,18 +51,29 @@ body {
 /* Section scrollable entre navbar et footer */
 .content-scrollable {
     position: fixed;
-    top: 170px; /* Ajuste selon la hauteur de la navbar */
-    bottom: 80px; /* Ajuste selon la hauteur du footer */
+    top: 170px;
+    /* Ajuste selon la hauteur de la navbar */
+    bottom: 80px;
+    /* Ajuste selon la hauteur du footer */
     left: 0;
     right: 0;
-    overflow: auto; /* Permet de scroller uniquement dans cette zone */
+    overflow: auto;
+    /* Permet de scroller uniquement dans cette zone */
     padding: 20px;
 }
 
 
 /* Responsive global */
 @media (max-width: 768px) {
-    .navbar-container { padding: 5px; }
-    .header-container { font-size: 0.5rem; }
-    .footer { padding: 5px; }
+    .navbar-container {
+        padding: 5px;
+    }
+
+    .header-container {
+        font-size: 0.5rem;
+    }
+
+    .footer {
+        padding: 5px;
+    }
 }

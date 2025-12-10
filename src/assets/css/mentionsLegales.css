@@ -1,0 +1,89 @@
+/* Page des mentions légales */
+.mentions-page {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.legal-container {
+    background-color: rgba(213, 218, 209, 0.95); /* Couleur de fond similaire à .page-container */
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.legal-container h1 {
+    font-family: 'Merriweather', serif;
+    color: #4a5240;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #a4b197;
+    padding-bottom: 15px;
+}
+
+.legal-section {
+    margin-bottom: 30px;
+}
+
+.legal-section h2 {
+    font-family: 'Merriweather', serif;
+    color: #5a6350;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-left: 4px solid #a4b197;
+    padding-left: 15px;
+}
+
+.legal-section p {
+    font-family: 'Merriweather', serif;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.legal-section address {
+    font-family: 'Merriweather', serif;
+    color: #333;
+    line-height: 1.8;
+    font-style: normal;
+}
+
+.legal-section address strong {
+    color: #4a5240;
+    font-weight: 600;
+}
+
+.legal-section a {
+    color: #6b7a5e;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.legal-section a:hover {
+    color: #4a5240;
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .legal-container {
+        padding: 20px;
+    }
+
+    .legal-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .legal-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .legal-section p,
+    .legal-section address {
+        font-size: 0.9rem;
+    }
+}

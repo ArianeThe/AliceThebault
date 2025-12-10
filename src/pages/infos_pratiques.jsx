@@ -30,11 +30,11 @@ const InfosPratiques = () => {
 
             <h4 className="bold-text">Le cabinet est accessible aux personnes à mobilité réduite</h4>
             <h4>Règlement et facturation</h4>
-            <p>Le règlement des consultations se fait à l’issue de chaque entretien, par chèque ou espèces.</p>
+            <p>Le règlement des consultations se fait à l'issue de chaque entretien, par chèque ou espèces.</p>
             <p>Le titre de psychologue clinicien garantit un Master II en psychologie clinique et psychopathologie.
-              Ce titre est protégé et enregistré auprès de l’Agence Régionale de Santé protégeant ainsi les patients contre l’exercice illégal de cette profession.
-              Mon numéro ADELI vous permet d’avoir accès au remboursement de vos séances par votre mutuelle.
-              N’hésitez pas à me demander une facture</p>
+              Ce titre est protégé et enregistré auprès de l'Agence Régionale de Santé protégeant ainsi les patients contre l'exercice illégal de cette profession.
+              Mon numéro ADELI vous permet d'avoir accès au remboursement de vos séances par votre mutuelle.
+              N'hésitez pas à me demander une facture</p>
             <p><strong>Toute consultation non annulée et non honorée sera due.</strong></p>
 
             <h4>Dispositif "Mon Soutien Psy"</h4>
